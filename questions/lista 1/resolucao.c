@@ -79,7 +79,25 @@ int questao6()
 
 int questao7()
 {
-    //
+    /*
+        Faça um programa para ler do teclado uma quantidade de segundos e imprimir na tela a
+        conversão para horas, minutos e segundos.
+        Exemplo:
+        Entrada: 3672
+        Saída: 1:1:12
+    */
+
+    int Segundos, Minuto, Hora;
+    Minuto = 60; //60 segundos === 1 minuto
+    Hora = 3600; // 3600 segundos === 1 hora
+
+    printf("digite segundos para converter em hora, minuto e segundo");
+    scanf("%d", &Segundos);
+
+    Minuto = Minuto / Segundos;
+    Hora = Hora / (Minuto * Segundos);
+
+    printf("horas:minutos:segundos --->  %d:%d:%d", Hora, Minuto, Segundos);
 }
 
 
