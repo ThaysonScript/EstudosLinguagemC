@@ -112,6 +112,28 @@ int main(void)
         printf("tipo long double precisa de: %d bytes", sizeof(doubAlongado));
 
 
+        //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        printf("\n\n\n\n");
+
+
+
+        // Operador unsigned; trocar %d por %u; limite para tipo int: 2.147.483.647; pode ser usado com short: unsigned short int; tbm com long: unsigned long int, use %lu
+
+        // unsigned retira parte negativa do max de armazenamento de uma variavel e dobra sua parte positiva
+
+        unsigned int xyz = 2147483647;
+        unsigned int soma1 = xyz + 1;
+
+        printf("%d\n\n", soma1);    //sera negativo, estouro de memoria
+        printf("%u\n", soma1);     //ainda sera positivo
+
+
+        unsigned int soma2 = xyz * 2;
+
+        printf("\n%d\n\n", soma2);    //sera negativo, estouro de memoria
+        printf("%u\n", soma2);     //tera o dobro === 4294967294
+
 
 
 
