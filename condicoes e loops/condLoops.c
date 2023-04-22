@@ -40,16 +40,15 @@
 
 
 
-    //switch
-        switch(variavel  condicao):
+    //switch - estrutura de selecao
+        switch(variavel){
 
-            case cond:
-
+            case valorVariavel:
                 break;
 
             default:
                 algo default aqui;
-
+        }
 
 
     // Operador ternario
@@ -76,5 +75,12 @@
 
                 controle do loop, decremento/incremento da variavel
             }
+
+
+
+        //loop do while
+            do{     //comece
+
+            }while()        //depois itere
 */
 
