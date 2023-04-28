@@ -52,6 +52,7 @@ int questao2()
 
     int i = 1;
     while(i <= 5) {
+        printf("digite valores positivos ou negativos\n");
         scanf("%d", &valor);
 
         if(i == 1) {
@@ -107,6 +108,29 @@ int questao3()
     /*
         3) Escreva um programa em C que leia um número e informe se ele é divisível por 2, por 3 ou por 5, ou se não é divisível por nenhum deles.
     */
+
+
+    int numero;
+
+    printf("\ndigite um numero\n");
+    scanf("%d", &numero);
+
+    if(numero % 2 == 0 || numero % 5 == 0) {
+        if(numero % 2 == 0) {
+            printf("divisivel por 2");
+        }
+
+        if(numero % 5 == 0) {
+            printf("\ndivisivel por 5");
+        }
+
+    } else if(numero % 3 == 0) {
+        printf("divisivel por 3");
+
+    } else {
+        printf("nao e divisivel por 2, 3 e 5");
+    }
+
 }
 
 int questao4()
@@ -115,6 +139,30 @@ int questao4()
         4) Crie um programa que permita ao usuário escolher entre fazer a conversão de Real para Dólar ou
         de Dólar para Real. Utilize como taxa de câmbio $1 igual a R$5.30.
     */
+
+
+    char nota;
+    float dollar, real = 5.30, conversao;
+
+    printf("Digite (D para conversao de dolar para real) ou (R de real para dolar)\n");
+    scanf(" %c", &nota);
+
+    if(nota == 'D') {
+        printf("\nInforme a quantidade de dolares\n");
+        scanf("%f", &dollar);
+
+        conversao = dollar * real;
+
+        printf("\nquantidade de reais e: %.2f", conversao);
+    }
+    else if(nota == 'R') {
+        printf("\nInforme a quantidade de reais\n");
+        scanf("%f", &real);
+
+        conversao = real / 5.30;
+
+        printf("\nquantidade de dolares e: %.2f", conversao);
+    }
 }
 
 int questao5()
@@ -122,7 +170,7 @@ int questao5()
     /*
         5) O IMC (Índice de Massa Corporal), pode ser calculado dividindo-se o peso da pessoa (em kg)
         pela altura (h em metros) elevada ao quadrado (IMC= m/h2). Escreva um programa que leia o peso
-        e a altura de uma pessoa, calcule e mostre o IMC e a faixa em que o indivíduo se enquadra de cordo
+        e a altura de uma pessoa, calcule e mostre o IMC e a faixa em que o indivíduo se enquadra de acordo
         com a tabela abaixo:
 
             IMC                          Interpretação
@@ -133,6 +181,37 @@ int questao5()
         Entre 35 e menor que 40         Obesidade grau 2
         Maior ou igual a 40             Obesidade grau 3
     */
+
+    float peso, altura;
+    float imc;
+
+    printf("\ndigite seu peso e altura\n");
+    scanf("%f %f", &peso, &altura);
+
+    imc = peso / (altura * altura);
+
+    printf("\nseu imc e: %.2f\n", imc);
+
+    if(imc < 18.5) {
+        printf("\nesta Abaixo do peso\n");
+    }
+    else if(imc >= 18.5 && imc < 25) {
+        printf("\nesta Peso normal\n");
+    }
+    else if(imc >= 25 && imc < 30) {
+        printf("\nesta Sobrepeso\n");
+    }
+    else if(imc >= 30 && imc < 35) {
+        printf("\nesta Obesidade grau 1\n");
+    }
+    else if(imc >= 35 && imc < 40) {
+        printf("\nesta Obesidade grau 2\n");
+    }
+    else if(imc >= 40) {
+        printf("\nesta Obesidade grau 3\n");
+    }
+
+
 }
 
 int questao6()
