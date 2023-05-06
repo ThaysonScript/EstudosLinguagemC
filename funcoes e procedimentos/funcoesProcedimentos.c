@@ -15,7 +15,7 @@
 
 
 
-/* DEFINICAO DE PROCEDIMENTOS (executa uma acao, mas nao necessariamente retorna um valor pra onde foi chamado)
+/* DEFINICAO DE PROCEDIMENTOS (executa uma acao, mas nao necessariamente retorna um valor ( parecido com um printf ) pra onde foi chamado)
 
     praticamente igual ao escopo de funcao so que pode nao retornar nada pra onde foi chamada
 */
