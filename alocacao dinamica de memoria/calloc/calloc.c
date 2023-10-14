@@ -3,10 +3,8 @@
 
 int main(void)
 {
-    int *x;
-
     // quantos elementos deve alocar == 1
-    x = calloc(1, sizeof(int));    // retorna o enderedo dessa alocacao dinamica, se nao conseguir retorna NULL
+    int *x = (int *) calloc(1, sizeof(int));    // retorna o enderedo dessa alocacao dinamica, se nao conseguir retorna NULL
 
     if(x) {
         printf("memoria alocada com sucesso!\n");

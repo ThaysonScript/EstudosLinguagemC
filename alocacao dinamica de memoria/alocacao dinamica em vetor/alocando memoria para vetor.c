@@ -4,13 +4,13 @@
 
 int main(void)
 {
-    int i, tam, *vet;
+    int i, tam;
 
     printf("digite o tamanho do vetor: ");
     scanf("%d", &tam);
     srand(time(NULL));
 
-    vet = malloc(tam * sizeof(int));
+    int *vet = (int *) malloc(tam * sizeof(int));
 
     if(vet) {
         printf("memoria alocada com sucesso!\n");
