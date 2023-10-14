@@ -1,0 +1,9 @@
+pasta para adicionar todos os arquivos de cabecalho .h
+
+se o seu arquivo .c possui dependencia de algum arquivo .h que esta em niveis de diretorios diferentes ao compilar o arquivo .c passe uma flag para dizer ao compilador gcc que é para encontrar as dependencias em um diretorio especifico:
+    use:
+        -I diretorio/
+
+    exemplo:
+        gcc -c arquivo.c -I include/ -o obj/arquivo_compilado.o
+
