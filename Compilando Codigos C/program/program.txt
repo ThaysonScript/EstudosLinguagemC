@@ -1,0 +1,3 @@
+essa pasta ira conter todos os codigos binarios que executam o programa como um todo ---------> executavel do programa
+
+pode dar o nome a pasta, como: demo, program, app

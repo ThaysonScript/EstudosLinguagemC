@@ -1,0 +1,32 @@
+essa pasta contem todos os binarios compilados do programa
+
+praticamente os binarios compilados da pasta src dos codigos fonte dos arquivos.c
+
+
+use:
+    gcc arquivo.c -o nome_saida
+
+para compilar arquivos .c sem main()
+    use:
+        gcc -c arquivo.c  --------> saida = arquivo.o
+
+        para especificar nome de arquivo de saida compilado:
+            gcc -c arquivo.c -o nome_saida
+
+    recomendado somente saida com arquivo_compilado.o
+
+
+
+
+
+Atencao!
+    ao tentar gerar compilacoes de codigos fonte da pasta src que tenham alguma dependencia de obj ou include use:
+        gcc ./src/arquivo_fonte.c ./obj/arquivo_compilado_include.o -I ./include -o ./bin/arquivo_compilado_saida
+
+    atencao:
+        caso o import do codigo fonte seja definido, mas não usado, não havera erro de compilacao
+
+
+
+    simplifique a compilacao usando bash:
+        gcc ./src/arquivo_fonte.c ./obj/*.o -I ./include -o ./bin/arquivo_compilado_saida

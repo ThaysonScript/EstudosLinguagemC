@@ -1,12 +1,1 @@
-para compilar arquivos .c
-    use:
-        gcc arquivo.c -o nome_saida
-
-para compilar arquivos .c sem main()
-    use:
-        gcc -c arquivo.c  --------> saida = arquivo.o
-
-        para especificar nome de arquivo de saida compilado:
-            gcc -c arquivo.c -o nome_saida
-
-    recomendado somente saida com arquivo_compilado.o
+guarda codigo fonte de arquivos.c

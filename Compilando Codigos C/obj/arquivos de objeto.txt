@@ -2,4 +2,4 @@ pasta usada para colocar todos os tipos de dados abstratos e compilados
 
 guardar todos os arquivos.o
 
-e compilados de arquivos.c
+guarda todos os compilados de cabecalhos .h dos includes
