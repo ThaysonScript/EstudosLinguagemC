@@ -10,3 +10,5 @@ all:
 	# gcc laboratorios_2022/lab04.c -o bins/lab04.o
 	# gcc laboratorios_2022/lab05.c -o bins/lab05.o
 	
+	# lab 2024
+	gcc lab_24/lab03.c lab_24/lab03_func.c -o bins/lab03.o
